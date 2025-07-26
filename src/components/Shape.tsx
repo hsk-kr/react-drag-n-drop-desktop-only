@@ -5,7 +5,7 @@ export type ShapeProps = { color: ShapeColor } & HTMLAttributes<HTMLDivElement>;
 
 const Shape = ({ color, style, ...rest }: ShapeProps) => {
   return (
-    <div style={{ width: 20, height: 20, backgroundColor: color, ...style }}{...rest} />
+    <div style={{ width: 40, height: 40, backgroundColor: color, ...style }}{...rest} />
   )
 }
 
