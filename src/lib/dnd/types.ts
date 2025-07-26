@@ -1,7 +1,5 @@
-import type { ShapeProps } from "../../components/Shape";
-
 type DragNDropKeyValueSet = {
-  moveShape: number;
+  shape: number;
 };
 
 export type DragNDropKeyValuePair = {

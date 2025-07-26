@@ -10,9 +10,9 @@ const StartArea = ({ shapes, createShape, onDragStart }: { shapes: Array<ShapePr
   return (
     <div>
       <h2>Start Point</h2>
-      <div style={{ display: 'flex', gap: 4, flexWrap: 'wrap', width: 400, height: 400, border: '1px solid black' }}>
-        {shapes.map((shape) => (
-          <Drag name="moveShape" value={shape} onDragStart={onDragStart}  >
+      <div style={{ display: 'flex', gap: 4, flexWrap: 'wrap', width: 150, height: 150, border: '1px solid black' }}>
+        {shapes.map((shape, shapeIdx) => (
+          <Drag name="shape" value={shapeIdx} onDragStart={onDragStart}  >
             <Shape {...shape} />
           </Drag>
         ))}
